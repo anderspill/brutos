@@ -1,0 +1,29 @@
+How to use alternative logos
+
+1. Go to "alternative" folder
+2. Choose which logo you prefer and remember its name
+3. Locate the config.xml that is in the same "alternative" folder
+4. Open the config with a text editor
+5. Remove letters "X" from near the beginning of the rows that handle your logo of choice
+6. Save the config and reload your FM skin with skin caching disabled
+7. The alternative logo should now be displyed instead of the primary logo
+
+
+Example:
+Do this to enable alternative Lecce logo "uefa_ita_lecce_alt-1":
+
+Locate rows with the name of the logo inside the config.xml file
+
+		<!-- Lecce -->
+		<Xrecord from="uefa_ita_lecce_alt-1" to="graphics/pictures/club/1141/logo"/> 
+		<Xrecord from="small/uefa_ita_lecce_alt-1" to="graphics/pictures/club/1141/icon"/> 
+
+Remove letters "X" from near the beginning of the rows. "Xrecord" becomes "record".
+
+		<!-- Lecce -->
+		<record from="uefa_ita_lecce_alt-1" to="graphics/pictures/club/1141/logo"/> 
+		<record from="small/uefa_ita_lecce_alt-1" to="graphics/pictures/club/1141/icon"/> 
+
+Save the config file and reload your Football Manager skin. The alternative Lecce
+logo should now be shown in place of the primary Lecce logo.
+

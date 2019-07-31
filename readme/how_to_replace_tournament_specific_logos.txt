@@ -1,0 +1,37 @@
+How to replace tournament specific logos
+
+Some primary competition logos within the pack are tournament specific. Examples
+of these would be World Cup and Olympic Games logos that will become "outdated"
+once the tournaments have been played. Tournament specific logos can be replaced
+with more general alternative logos by following the steps described below.
+
+
+How to replace tournament logos:
+
+1. Go to "dvx-logos\competitions\alternative" folder
+2. Choose which logo you prefer and remember its name
+3. Locate the config.xml that is in the same folder
+4. Open the config with a text editor
+5. Remove letters "X" from near the beginning of the rows that handle your logo of choice
+6. Save the config and reload your FM skin with skin caching disabled
+7. The alternative logo should now be displyed instead of the primary logo
+
+
+Example:
+Do this to enable alternative FIFA World Cup logo:
+
+Locate rows that handle the FIFA World Cup inside the config.xml file
+
+		<!-- FIFA World Cup -->
+		<Xrecord from="fifa_competitions" to="graphics/pictures/comp/1301385/logo"/>
+		<Xrecord from="small/fifa_competitions" to="graphics/pictures/comp/1301385/icon"/>
+
+Remove letters "X" from near the beginning of the rows. "Xrecord" becomes "record".
+
+		<!-- FIFA World Cup -->
+		<record from="fifa_competitions" to="graphics/pictures/comp/1301385/logo"/>
+		<record from="small/fifa_competitions" to="graphics/pictures/comp/1301385/icon"/>
+
+Save the config file and reload your Football Manager skin. The alternative World Cup
+logo should now be shown in place of the primary World Cup logo.
+

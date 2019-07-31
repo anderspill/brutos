@@ -1,0 +1,23 @@
+How to enable small flags
+
+DVX Logos displays small FA logos on player profile screens and in many other
+places. If you would rather have the small logos be replaced by small flags,
+you can do it by following these steps:
+
+1. Go to "dvx-logos\associations\primary\small"
+2. Locate small_flags.zip
+3. Extract the zip archive to "dvx-logos\associations\primary\small"
+4. Overwrite the config.xml that is located there
+5. Reload your FM skin with skin caching disabled
+6. The small flags should now be displayed instead of the small FA logos
+
+You can again display the small FA logos instead of the small flags by following
+these steps:
+
+1. Go to "dvx-logos\associations\primary\small"
+2. Locate small_logos.zip
+3. Extract the zip archive to "dvx-logos\associations\primary\small"
+4. Overwrite the config.xml that is located there
+5. Reload your FM skin with skin caching disabled
+6. The small logos should now be displayed instead of the small flags
+
